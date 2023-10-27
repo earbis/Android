@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "Android"
 include(":app")
 include(":ejercicio3")
+include(":toggleandswitch")
