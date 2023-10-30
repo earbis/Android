@@ -4,15 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:avengers="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <include layout = "@layout/toolbar"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/idLinea_0"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="64dp"
+        avengers:layout_constraintTop_toBottomOf="@id/toolbar"/>
+
+    <!--En el código anterior, he agregado restricciones a la vista idToolBar para que esté alineada
+    en la parte superior del diseño (app:layout_constraintTop_toTopOf="parent")
+    Luego, he agregado restricciones a la vista idLinea_0 para que esté justamente debajo de la barra de herramientas
+    (app:layout_constraintTop_toBottomOf="@id/idToolBar")-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
