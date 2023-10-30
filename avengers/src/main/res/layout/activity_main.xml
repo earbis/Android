@@ -19,7 +19,7 @@
         android:background="@color/black"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="64dp"
-        avengers:layout_constraintTop_toBottomOf="@id/toolbar"/>
+        avengers:layout_constraintTop_toBottomOf="parent"/>
 
     <!--En el código anterior, he agregado restricciones a la vista idToolBar para que esté alineada
     en la parte superior del diseño (app:layout_constraintTop_toTopOf="parent")
